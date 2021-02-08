@@ -6,7 +6,7 @@ import { showCnxmlPreview } from './panel-cnxml-preview';
 
 const resourceRootDir = path.join(__dirname); // extension is running in dist/
 
-export async function activate(context: vscode.ExtensionContext): Promise<void> {
+export async function activate(/*context: vscode.ExtensionContext*/): Promise<void> {
 	vscode.commands.registerCommand('openstax.showTocEditor', showTocEditor(resourceRootDir));
 	vscode.commands.registerCommand('openstax.showImageUpload', showImageUpload(resourceRootDir));
 	vscode.commands.registerCommand('openstax.showPreviewToSide', showCnxmlPreview(resourceRootDir));
